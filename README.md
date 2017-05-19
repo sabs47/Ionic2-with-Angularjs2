@@ -1,2 +1,2 @@
 # Ionic2-with-Angularjs2
-Application Cross platform 
+ Cross platform Application Mobile
