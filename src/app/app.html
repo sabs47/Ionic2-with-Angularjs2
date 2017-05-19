@@ -1,0 +1,84 @@
+<ion-menu [content]="content" side="right" id="menu1">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Mobile Banking</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>                             
+       <ion-list>
+            <ion-item (click)="Solde_du_compte()" menuClose>
+               <ion-icon><img src="assets/icon/scompte.png"/></ion-icon>
+                 Solde du compte
+            </ion-item>
+            <ion-item (click)="Dernieres_operations()" menuClose>
+                 <ion-icon><img src="assets/icon/Dops.png"/></ion-icon>
+                  Dernières opérations
+            </ion-item>
+             <ion-item (click)="Virement_entre_comptes()" menuClose>
+              
+              <ion-icon><img src="assets/icon/VEC.png"/></ion-icon>
+               Virement entre comptes
+            </ion-item>
+             <ion-item (click)="Demande_de_releves()" menuClose>
+              
+              <ion-icon><img src="assets/icon/DMR.png"/></ion-icon>
+               Demande de relevés
+            </ion-item>
+             <ion-item (click)="Demande_de_Rv()" menuClose>
+              <ion-icon><img src="assets/icon/DRV.png"/></ion-icon>
+               Demande de Rv
+            </ion-item>
+             <ion-item (click)="Cours_des_devises_du_jour()" menuClose>
+              <ion-icon><img src="assets/icon/CDJ.png"/></ion-icon>
+               Cours des devises du jour
+            </ion-item>
+        </ion-list>
+         <button ion-button (click)="go_home()" menuClose>
+           <ion-icon name="home"></ion-icon>
+        </button>
+</ion-content>
+</ion-menu>
+
+<ion-menu [content]="content" side="right" id="menu2">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Porte Feuille</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-item (click)="Solde_du_comptepf()" menuClose>
+                <ion-icon><img src="assets/icon/scompte.png"/></ion-icon>
+                 Solde du compte
+            </ion-item>
+            <ion-item (click)=" Dernieres_operationspf()" menuClose>
+               <ion-icon><img src="assets/icon/Dops.png"/></ion-icon>
+                 Dernières opérations
+            </ion-item>
+             <ion-item (click)="Transfert()" menuClose>
+                <ion-icon><img src="assets/icon/Transfert.png"/></ion-icon>
+              Transfert
+            </ion-item>
+             <ion-item (click)="Transfert_entre_comptes_PME()" menuClose>
+                <ion-icon><img src="assets/icon/TCPME.png"/></ion-icon>
+              Transfert entre comptes PME
+            </ion-item>
+             <ion-item (click)="Bank_to_Wallet()" menuClose>
+                <ion-icon><img src="assets/icon/btwallet.png"/></ion-icon>
+              Bank to Wallet
+            </ion-item>
+             <ion-item (click)="Reglements()" menuClose>
+               
+                <ion-icon><img src="assets/icon/Reglements.png"/></ion-icon>
+               Règlements
+            </ion-item>
+        </ion-list>
+        <button ion-button (click)="go_home()" menuClose>
+           <ion-icon name="home"></ion-icon>
+        </button>
+    </ion-content>
+    
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
